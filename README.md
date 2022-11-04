@@ -1,213 +1,91 @@
-# Ruby on Rails (BACKEND API REST (ruby with rails) + TESTES UNITÁRIOS E DE API)
-
-<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
-
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
-
-<p align="center"><img src="logo_rr.jpeg" alt="Ruby on Rails logo" style="width:250px;" /></p>
-
-> Novidade com a questão de rotina de base de dados e migração de cenários!!!! Bem vindo a linguagem Ruby e ao Framework Ruby on Rails com as bibliotecas RSpec-Rails e database_cleaner
-
-## Built With
-
-- Ruby v2.7.2
-- Ruby on Rails v6.1.3
-- RSpec-Rails for testing
-
-## Current API Endpoints
-
-The API will expose the following RESTful endpoints.
-
-### BaseUrl: {Host-URL}/api/v1
-
-| Endpoint          | Functionality  |
-| ----------------- | -------------- |
-| POST /register    | Signup         |
-| POST /login       | Login          |
-| GET /books        | Get all books  |
-| GET /books/:id    | Get a bppl     |
-| POST /books       | Add a new book |
-| DELETE /books/:id | Delete a book  |
-| PUT /books/:id    | Update a book  |
-| POST /categories  | Add category   |
-| GET /categories   | Get categories |
-
-To get a local copy up and running follow these simple example steps.
-
-### Ajustes e melhorias
-
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
-
-- [x] Criar GET no jsonplaceholder
-- [ ] Criar POST no jsonplaceholder
-- [ ] Criar PUT no jsonplaceholder
-- [ ] Traduzir para português?
-
-## 💻 Pré-requisitos
-
-Ruby: 2.6.5
-Rails: 6.0.3.2
-Postgres: >=9.5
-
-## 🚀 Instalando <ruby-on-rails-book-api-example>
-
-Para instalar o <ruby-on-rails-book-api-example>, siga estas etapas:
-
-Linux e macOS:
-
-### Setup
-
-```bash
-$ git clone https://github.com/acushlakoncept/books-api-article-part1.git
-$ cd books-api-article-part1
-```
-
-Install gems with:
-
-```
-FOR MAC
-https://dev.to/thomasvanholder/how-to-upgrade-your-rails-app-to-ruby-31-with-rbenv-5efl
-
-$ brew update && brew upgrade ruby-build
-$ brew update
-$ brew install ruby-build
-$ brew install rbenv
-
-$ rbenv install 3.1.2
-$ rbenv global 3.1.2
-$ rbenv local 3.1.0
-
-for update
-$ brew upgrade rbenv ruby-build
-
-
-if error
-https://github.com/rbenv/ruby-build/issues/1409
-$ brew install openssl
-
-FOR run install gems
-$ gem install bundler:2.2.7
-$ bundle install
-```
-
-Setup database with:
-
-> make sure you have postgress sql installed and running on your system
-
-```
-   eval "$(rbenv init - sh)"
-   rails db:create
-   rails db:migrate
-   rails db:seed
-```
-
-### Usage
-
-Start server with:
-
-```
-    rails server
-```
-
-Open `http://localhost:3000/` in your browser.
-sh-3.2$ eval "$(rbenv init -)"
-sh-3.2\$ sudo bundle exec rspec
-
-### Deploy to a live server
-
-Deploying to a live server like Heroku is easy, make sure you have the necessary credentials setup on your local machine
-
-```bash
-heroku create
-heroku rename app-new-name
-git push heroku $BRANCH_NAME:master
-```
-
-if you are already in master branch no need to add \$BRANCH_NAME, just use `git push heroku master`
-
-```bash
-heroku run rails db:migrate
-heroku run rails db:seed
-heroku open
-```
-
-Enjoy your newly deployed rails API
-
-### Run tests
-
-```
-    rpsec
-```
-
-A simple example can be [found here](/_examples/custom-formatter).
-
-## License
-
-**Godog** and **Gherkin** are licensed under the [MIT][license] and developed as a part of the [cucumber project][cucumber]
-
-[godoc]: https://pkg.go.dev/github.com/cucumber/godog 'Documentation on godog'
-[golang]: https://golang.org/ 'GO programming language'
-[behat]: http://docs.behat.org/ 'Behavior driven development framework for PHP'
-[cucumber]: https://cucumber.io/ 'Behavior driven development framework'
-[license]: https://en.wikipedia.org/wiki/MIT_License 'The MIT license'
-[contributing guide]: https://github.com/cucumber/godog/blob/main/CONTRIBUTING.md
-[community slack]: https://cucumber.io/community#slack>
-
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
-
-## 📫 Contribuindo para <ruby-on-rails-book-api-example>
-
-<!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
-
-Para contribuir com <ruby-on-rails-book-api-example>, siga estas etapas:
-
-1. Bifurque este repositório.
-2. Crie um branch: `git checkout -b <nome_branch>`.
-3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
-4. Envie para o branch original: `git push origin <ruby-on-rails-book-api-example> / <local>`
-5. Crie a solicitação de pull.
-
-Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-## 🤝 Colaboradores
-
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
-        <sub>
-          <b>Luiz Felipe - Fluid</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://s2.glbimg.com/FUcw2usZfSTL6yCCGj3L3v3SpJ8=/smart/e.glbimg.com/og/ed/f/original/2019/04/25/zuckerberg_podcast.jpg" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
-        <sub>
-          <b>Douglas Adriano Queiroz - NKEY</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
-
-## 😄 Seja um dos contribuidores<br>
-
-Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
-
-## 📝 Licença
-
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
-
-[⬆ Voltar ao topo](#nome-do-projeto)<br>
-
-```
-
-```
+# TopScoreRanking
+
+This application provides a simple api to:
+* register scores for a given player
+* search the scores by players and dates
+* get score history and basic stats for a given player
+
+It is built using:
+* Ruby 3.0.1
+* Rails 6.1.3.2
+* sqlite3
+
+It uses Kaminari to provide pagination support to Active Record queries and Swagger Blocks for rest api documentation generation
+
+Getting started
+---------------
+
+To get the application up and running:
+* clone this repository
+* make sure you have installed Ruby 3.* and it is being used in your terminal shell
+    * you can verify the version by executing `ruby -v`
+* run `bundle install` to install all the required gems
+* run `bundle exec rails db:migrate` to prepare the local database
+* run `bundle exec rails s` to start the server
+    * the server will be available at http://localhost:3000/
+
+Alternatively if you have docker installed simply run: `docker-compose up` from the root of the repository, this will:
+* create an image if missing by:
+    * create an image starting from Ruby:3.0.1 image
+    * copy the Gemfile and install the dependencies
+    * copy the sources over to the image
+    * run db:migrate to initialize the sqllite3 local database
+    * setup to start the rails server when the container is started
+* run the service and expose the port 3000
+* access the api via http://localhost:3000 as you would if you had started it locally.
+
+N.B. If you run bundle install locally, before creating the docker image, make sure you're using the same cpu architecture as the image.
+If you compile on a M1 Mac mini, delete Gemfile.lock before creating the docker image as it might reference some Arm64 specific dependencies that will not work with the base ruby image.
+
+    
+
+Executing the Specs
+-------------------
+
+This application uses RSpec to test the functionality of the modules and the api
+
+To execute the specs run:
+`bundle exec rspec`
+
+You can execute `bundle exec rspec --format documentation` to get a more verbose output.
+
+
+Project Structure
+-----------------
+
+The project has one single model: `score` which also provides additional class methods for composable ActiveRecord::Relation:
+* `Score.by_players(players)` where players can be a string or a list, 
+* `Score.before(datetime)` and `Score.after(datetime)` to filter the scores by a given DateTime object
+
+The JSON API is divided across two controllers:
+* `ScoresController` which provides the basic CRUD (minus Update) and Search functionality for the scores
+  * `POST /api/scores` to submit a score
+  * `GET /api/scores/{id}` to retrieve a score object by id
+  * `DELETE /api/scores/{id}` to delete a score
+  * `GET /api/scores?page=1&size=10&players=player1&before=2021-05-15T20:18:22Z&after=2021-05-14T20:18:22Z` to search for scores
+    * for `before` and `after` parameters, use ISO8601 DateTime format
+    * when using a timezone with the [+-]00:00 format, make sure to encode the URI
+* `HistoryController` which provides the Player score history and statistics
+  * `GET /api/player/{player_id}/history` to retrieve the player's scores and statistics
+    * if the player ID is not found, it will simply return empty statistics with a 200 status code.
+  
+The statistics aggregation is implemented in the util class `HistoryUtils`.
+The method `aggregate_scores` takes a list of scores, and returns an object with the following properties:
+* `high_score` for the first highest score encountered in the list, respecting the order given in input
+* `low_score` for the first lowest score encountered in the list, respecting the order given in input
+* `avg_score` calculated across the entire list of scores
+* `scores` the given list.
+
+N.B. The `aggregate_scores` method will ignore and remove the player and the id from the score objects in the list. 
+If a list is passed that contains scores of multiple players, the aggregations will not be split by player.
+
+Run the application and open http://localhost:3000/ in the browser to get a homepage with links to:
+* [RDoc documentation](http://localhost:3000/docs/index.html)
+* [Swagger JSON API documentation](http://localhost:3000/swagger/index.html)
+
+
+Documentation
+-------------
+
+* Swagger api documentation is automatically generated at runtime
+* To Re-generate RDoc documentation run `./generate_rdocs.sh` to generate the docs and place them unter /public/docs so that they will be served by the application directly.

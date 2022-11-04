@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-  namespace :api do
-    namespace :v1 do
-      resources :categories, only: %i[index create destroy]
-      resources :books, only: %i[index create show update destroy]
-    end
-    namespace :v1external do
-      resources :comments, only: %i[index]
-    end
+  resources :comments, only: [:create, :update, :index]
+  resources :scores, only: [:create, :destroy, :show, :index]
+  resources :players, only: [] do
+    resource :history, only: [:show]
   end
+  resources :apidocs, only: [:index]
 end
